@@ -8,10 +8,14 @@ import pendulum
 #the information of the passwords. For use to have 5 Guest accounts available weekly for
 #sites to have guests join Zoom meetings and whatnot.
 
+#Campuses is where you put in what campus you are updating a guest login for, and then whom you are emailing
+#to. The third field is used by the program to story the body of the email that gets mailed out.
 campuses = [('ahs','me@school.org',''),
              ('chs','me@school.org',''),
              ('llhs','me@school.org',''),
              ('mhs','me@school.org','')]
+#docontacts is where you would put in District level people who need to be aware of what then
+#passwords are for each site.
 docontacts = 'admincontact@school.org,admincontact@school.org'
 pendulum.week_starts_at(pendulum.MONDAY)
 pendulum.week_ends_at(pendulum.FRIDAY)
